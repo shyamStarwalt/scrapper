@@ -127,7 +127,6 @@ def run_worker():
         final_df = pd.DataFrame()
         input_file = pd.read_csv(f)
         company_url = do_input(input_file)
-        print(f)
         for company in company_url:
             url = Base_URL + company
             data = get_result(url)
@@ -137,12 +136,12 @@ def run_worker():
         return redirect('static/scrapped_'+f)
 
 
-@app.route('/home')
+@app.route('/')
 def start():
     return render_template('index.html')
 
 def run_flask():
-    app.run()
+    app.run(host='127.0.0.1', port=5000)
 
 if __name__ == '__main__':
     run_flask()
