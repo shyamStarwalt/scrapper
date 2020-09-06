@@ -1,0 +1,8 @@
+pandas
+numpy
+beautifulsoup4
+flask
+gunicorn
+Jinja2
+MarkupSafe
+Werkzeug
