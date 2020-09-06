@@ -6,13 +6,7 @@ import re
 import numpy as np
 import string
 from flask import *
-import sys
-import ctypes
-import webview
-from io import StringIO
-from contextlib import redirect_stdout
-from io import StringIO
-from threading import Thread, Lock
+
 
 def preprocess(x):
     x=x.upper()
